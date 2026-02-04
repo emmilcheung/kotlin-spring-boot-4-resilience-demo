@@ -43,7 +43,7 @@ class WeatherControllerCurrentWeatherTest {
         fun configureProperties(registry: DynamicPropertyRegistry) {
             wireMockServer.start()
             registry.add("weather.api.base-url") { wireMockServer.baseUrl() }
-            registry.add("weather.api.resource") { "weather.php" }
+            registry.add("weather.api.resource") { "/weather.php" }
             registry.add("weather.api.simulate-failures") { "false" }
         }
     }

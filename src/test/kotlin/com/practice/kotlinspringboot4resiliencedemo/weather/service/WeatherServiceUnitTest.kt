@@ -51,7 +51,7 @@ class WeatherServiceUnitTest {
         val service = WeatherService(
             restClientBuilder = mockRestClientBuilder,
             weatherApiBaseUrl = "https://test.api.com",
-            weatherApiResource = "weather.php",
+            weatherApiResource = "/weather.php",
             simulatedFailureRate = 0.0,
             simulateFailures = false
         )
@@ -75,7 +75,7 @@ class WeatherServiceUnitTest {
         val service = WeatherService(
             restClientBuilder = mockRestClientBuilder,
             weatherApiBaseUrl = "https://test.api.com",
-            weatherApiResource = "weather.php",
+            weatherApiResource = "/weather.php",
             simulatedFailureRate = 0.3,
             simulateFailures = true
         )
@@ -104,7 +104,7 @@ class WeatherServiceUnitTest {
         val service = WeatherService(
             restClientBuilder = mockRestClientBuilder,
             weatherApiBaseUrl = "https://test.api.com",
-            weatherApiResource = "weather.php",
+            weatherApiResource = "/weather.php",
             simulatedFailureRate = 0.5,
             simulateFailures = false
         )
@@ -128,7 +128,7 @@ class WeatherServiceUnitTest {
         val service = WeatherService(
             restClientBuilder = mockRestClientBuilder,
             weatherApiBaseUrl = "https://test.api.com",
-            weatherApiResource = "weather.php",
+            weatherApiResource = "/weather.php",
             simulatedFailureRate = 0.0,
             simulateFailures = false
         )

@@ -38,7 +38,7 @@ class WeatherService(
     private val restClientBuilder: RestClient.Builder,
     @Value("\${weather.api.base-url:https://data.weather.gov.hk/weatherAPI/opendata}")
     private val weatherApiBaseUrl: String,
-    @Value("\${weather.api.resource:weather.php}")
+    @Value("\${weather.api.resource:/weather.php}")
     private val weatherApiResource: String,
     @Value("\${weather.api.failure-rate:0.3}")
     private val simulatedFailureRate: Double,

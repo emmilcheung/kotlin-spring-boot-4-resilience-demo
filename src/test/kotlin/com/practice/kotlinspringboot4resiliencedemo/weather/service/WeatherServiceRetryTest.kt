@@ -44,7 +44,7 @@ class WeatherServiceRetryTest {
             wireMockServer.start()
             // Point to WireMock instead of real API
             registry.add("weather.api.base-url") { wireMockServer.baseUrl() }
-            registry.add("weather.api.resource") { "weather.php" }
+            registry.add("weather.api.resource") { "/weather.php" }
             // Disable simulated failures - we control failures via WireMock
             registry.add("weather.api.simulate-failures") { "false" }
         }
